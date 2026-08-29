@@ -1,0 +1,39 @@
+.hdenq-enquiry-box {
+    margin: 2em 0;
+    padding: 1.5em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.hdenq-enquiry-box h3 {
+    margin-top: 0;
+}
+
+.hdenq-enquiry-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25em;
+}
+
+.hdenq-enquiry-form input[type="text"],
+.hdenq-enquiry-form input[type="email"],
+.hdenq-enquiry-form textarea {
+    width: 100%;
+    max-width: 500px;
+}
+
+.hdenq-honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.hdenq-notice.hdenq-success {
+    margin: 1.5em 0;
+    padding: 1em;
+    border: 1px solid #1a7f37;
+    border-radius: 4px;
+    color: #1a7f37;
+}
