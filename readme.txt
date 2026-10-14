@@ -35,6 +35,9 @@ A serious class of bug in enquiry and contact tools is stored XSS: customer-subm
 * Replies are sent by email only -- there is no customer-facing "my questions" account page in this version
 * One question per submission -- no threaded back-and-forth conversation yet
 
+= Enjoying this plugin? =
+If it helps your site, please consider [leaving an honest review on WordPress.org](https://wordpress.org/support/plugin/hdwebmobile-product-enquiry/reviews/#new-post) -- it helps other WordPress users find it. Found a problem or have an idea? Please [open a support topic](https://wordpress.org/support/plugin/hdwebmobile-product-enquiry/) first so it can be fixed.
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/hdwebmobile-product-enquiry` directory, or install the plugin through the WordPress plugins screen directly.
