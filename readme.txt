@@ -10,14 +10,14 @@ Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Let customers ask a question about a product before buying. Every field is escaped at the point of output, everywhere.
+Customers ask a question from the product page. You reply from wp-admin, and the answer is emailed straight back to them.
 
 == Description ==
 
 HDWebmobile Product Enquiry adds a simple "Ask a question about this product" form to every product page. Questions are emailed to the store admin and listed under WooCommerce > HDWebmobile > Product Enquiries, where staff can reply -- the reply is emailed straight back to the customer.
 
 = Security by design =
-A serious class of bug in enquiry and contact tools is stored XSS: customer-submitted content rendered back out as HTML without proper escaping, so an attacker can submit a question containing a script payload that executes in the browser of any staff member who views it in wp-admin -- a direct path to administrator account takeover. This plugin closes that vulnerability class by construction:
+An enquiry form stores text typed by strangers and shows it to your staff in wp-admin, so that text must never be able to run as code in an administrator's browser (stored XSS). This plugin is built so it cannot:
 
 * Every customer-controlled value -- name, email, message, and later the admin's reply -- passes through `esc_html()` at the exact point it is printed as HTML, both in the admin enquiry list and anywhere it could ever be displayed, with no exceptions.
 * Input is still sanitized on the way in (`sanitize_text_field()`, `sanitize_email()`, `sanitize_textarea_field()`) as defense in depth, but the actual fix for this vulnerability class lives at output time, not input time -- sanitizing on save and forgetting to escape on display is exactly the mistake that causes it.
