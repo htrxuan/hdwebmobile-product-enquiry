@@ -9,9 +9,9 @@ if (!defined('ABSPATH')) {
 /**
  * Storage only -- every value here is saved exactly as sanitized on the way in
  * (sanitize_text_field()/sanitize_email()/sanitize_textarea_field()), but nothing
- * in this class is responsible for escaping on the way OUT. That is deliberate: the
- * competing plugin's CVE-2026-59512 vulnerability was an output-escaping failure,
- * not an input-sanitization one, so the fix lives entirely at render time in
+ * in this class is responsible for escaping on the way OUT. That is deliberate:
+ * stored XSS is an output-escaping failure, not an input-sanitization one, so
+ * escaping lives entirely at render time in
  * HDENQ_Admin and HDENQ_Frontend -- every echo of a customer-submitted field in
  * this plugin passes through esc_html()/esc_attr() at the point it is printed,
  * never relying on "it was already sanitized when stored" as a substitute.

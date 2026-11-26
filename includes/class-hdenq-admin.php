@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * This is the exact rendering surface CVE-2026-59512 broke: a customer-submitted
+ * The admin enquiry screen: a customer-submitted
  * question, rendered as HTML in wp-admin for a staff member to read. Every single
  * customer-controlled value below -- name, email, message, reply -- passes through
  * esc_html() at the point it is printed, with no exceptions and no "this one's

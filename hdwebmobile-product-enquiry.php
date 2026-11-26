@@ -3,7 +3,7 @@
 /**
  * Plugin Name: HDWebmobile Product Enquiry
  * Plugin URI: https://hdwebmobile.com/plugins/hdwebmobile-product-enquiry/
- * Description: Let customers ask a question about a product before buying. Every field is escaped at the exact point of output, everywhere it could ever render, closing the unauthenticated stored-XSS class found in a competing product-enquiry plugin.
+ * Description: Let customers ask a question about a product before buying. Questions are emailed to the store admin, listed in wp-admin, and staff replies are emailed back to the customer.
  * Version: 1.0.0
  * Author: htrxuan - Han Tran
  * Author URI: https://hdwebmobile.com/
